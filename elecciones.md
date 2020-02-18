@@ -10,7 +10,7 @@ date: 2020-02-17
 		{% for election in site.elections %}
 		<tr>
 			<td>{{ election.country }}</td>
-			<td><input type="button" onclick="location.href='http://localhost:4000/elections/{{ election.name }}';" value="Ver Más" /></td>
+			<td><input type="button" onclick="location.href='{{ site.url }}elections/{{ election.name }}';" value="Ver Más" /></td>
 		</tr>
 		{% endfor %}
 	</table>
